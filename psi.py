@@ -84,8 +84,11 @@ class Char():
                 (5) Help""")
         while(not isinstance(psi,int)):
             psi = input("Please enter a number given : ")
+            print(int(psi))
+            break
         if(isinstance(psi,int)):
-            while(not(0 < int(psi) < 5)):
+            print("I made it")
+            while(0 < int(psi) < 5):
                 psi = input("Power : ")
                 Engine.clear()
                 print("""What Type of Psychic Power do you Desire?\n
